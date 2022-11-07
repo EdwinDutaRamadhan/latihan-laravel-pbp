@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 Route::get('/tampil_mahasiswa', [MahasiswaModelController::class, 'getAll']);
 Route::get('/get_data', [MahasiswaModelController::class, 'getAll']);
+Route::get('/get_mahasiswa_id',[MahasiswaModelController::class, 'getSingle']);
+Route::get('/get_mahasiswa_id/{q}',[MahasiswaModelController::class, 'getSingle']);

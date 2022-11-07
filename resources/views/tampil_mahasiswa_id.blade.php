@@ -12,14 +12,12 @@
             <th>ID</th>
             <th>Nama</th>
             <th>IPK</th>
-            <th>Action</th>
         </tr>
         @foreach($data as $dd)
             <tr>
                 <td>{{ $dd->id }}</td>
                 <td>{{ $dd->nama_mahasiswa }}</td>
                 <td>{{ $dd->ipk }}</td>
-                <td><a href="/get_mahasiswa_id/{{ $dd->id }}">Detail</a></td>
             </tr>
         @endforeach
     </table>

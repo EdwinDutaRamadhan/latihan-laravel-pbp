@@ -2,17 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MahasiswaModel;
-use App\Http\Requests\StoreMahasiswaModelRequest;
-use App\Http\Requests\UpdateMahasiswaModelRequest;
+use App\Models\mahasiswa_model;
+use App\Http\Requests\Storemahasiswa_modelRequest;
+use App\Http\Requests\Updatemahasiswa_modelRequest;
 
 class MahasiswaModelController extends Controller
 {
-    public function getAll(){
-        $query=MahasiswaModel::all();
-        //$query=$query->get();
-        return view('tampil_mahasiswa',['data'=>$query]);
-        }
     /**
      * Display a listing of the resource.
      *
@@ -36,10 +31,10 @@ class MahasiswaModelController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreMahasiswaModelRequest  $request
+     * @param  \App\Http\Requests\Storemahasiswa_modelRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreMahasiswaModelRequest $request)
+    public function store(Storemahasiswa_modelRequest $request)
     {
         //
     }
@@ -47,10 +42,10 @@ class MahasiswaModelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\MahasiswaModel  $mahasiswaModel
+     * @param  \App\Models\mahasiswa_model  $mahasiswa_model
      * @return \Illuminate\Http\Response
      */
-    public function show(MahasiswaModel $mahasiswaModel)
+    public function show(mahasiswa_model $mahasiswa_model)
     {
         //
     }
@@ -58,10 +53,10 @@ class MahasiswaModelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\MahasiswaModel  $mahasiswaModel
+     * @param  \App\Models\mahasiswa_model  $mahasiswa_model
      * @return \Illuminate\Http\Response
      */
-    public function edit(MahasiswaModel $mahasiswaModel)
+    public function edit(mahasiswa_model $mahasiswa_model)
     {
         //
     }
@@ -69,11 +64,11 @@ class MahasiswaModelController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateMahasiswaModelRequest  $request
-     * @param  \App\Models\MahasiswaModel  $mahasiswaModel
+     * @param  \App\Http\Requests\Updatemahasiswa_modelRequest  $request
+     * @param  \App\Models\mahasiswa_model  $mahasiswa_model
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMahasiswaModelRequest $request, MahasiswaModel $mahasiswaModel)
+    public function update(Updatemahasiswa_modelRequest $request, mahasiswa_model $mahasiswa_model)
     {
         //
     }
@@ -81,10 +76,10 @@ class MahasiswaModelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\MahasiswaModel  $mahasiswaModel
+     * @param  \App\Models\mahasiswa_model  $mahasiswa_model
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MahasiswaModel $mahasiswaModel)
+    public function destroy(mahasiswa_model $mahasiswa_model)
     {
         //
     }
