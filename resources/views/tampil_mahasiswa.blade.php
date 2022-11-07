@@ -15,9 +15,9 @@
         </tr>
         @foreach($data as $dd)
             <tr>
-                <td>{{ $dd['id'] }}</td>
-                <td>{{ $dd['nama_mahasiswa'] }}</td>
-                <td>{{ $dd['ipk'] }}</td>
+                <td>{{ $dd->id }}</td>
+                <td>{{ $dd->nama_mahasiswa }}</td>
+                <td>{{ $dd->ipk }}</td>
             </tr>
         @endforeach
     </table>
